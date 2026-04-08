@@ -30,7 +30,7 @@ export function MediaSection() {
             <ImagePanel
               image={merchItems[0].image}
               title="Мерч студии"
-              description="Стильная страница под одежду и будущие дропы, где текущие lifestyle-фото можно заменить на реальные карточки товаров."
+              description="Отдельная страница мерча с реальными фото актуального товара: штанов для танцев и контактной точкой для уточнения наличия."
               className="min-h-[420px]"
             />
           </Reveal>

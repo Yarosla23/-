@@ -8,6 +8,15 @@ import evaImageSecondary from "@/media/eva2.jpg";
 import logoImage from "@/media/logo.jpg";
 import kidsPriceImage from "@/media/price_children.jpg";
 import kidsScheduleImage from "@/media/sheduded_children.jpg";
+import merchPantsDetailDarkImage from "@/media/merch/red.jpg";
+import merchPantsDetailLightImage from "@/media/merch/white.jpg";
+import merchPantsImagePrimary from "@/media/merch/photo_2026-04-09_00-46-35.jpg";
+import merchPantsImageSecondary from "@/media/merch/photo_2026-04-09_00-46-31.jpg";
+import merchPantsImageTeam from "@/media/merch/photo_2026-04-09_00-46-40.jpg";
+import merchPantsImageThird from "@/media/merch/photo_2026-04-09_00-46-42.jpg";
+import merchPantsImageFourth from "@/media/merch/photo_2026-04-09_00-46-49.jpg";
+import merchPantsImageFifth from "@/media/merch/photo_2026-04-09_00-46-52.jpg";
+import merchPantsImageSixth from "@/media/merch/photo_2026-04-09_00-47-01.jpg";
 import yanaImagePrimary from "@/media/yana1.jpg";
 import yanaImageSecondary from "@/media/yana2.jpg";
 
@@ -28,10 +37,14 @@ export const mainNavigation = [
 ] as const;
 
 export const socialLinks = [
-  { href: "#", label: "Instagram" },
-  { href: "#", label: "Telegram" },
-  { href: "#", label: "VK" },
+  { href: "https://t.me/miss_luzina", label: "Telegram" },
+  { href: "https://vk.com/yanaluzina", label: "VK" },
 ] as const;
+
+export const footerCredit = {
+  label: "@yarik_and",
+  url: "https://t.me/yarik_and",
+} as const;
 
 export const contactLines = [
   "Запись осуществляется в лс",
@@ -227,40 +240,68 @@ export const campInfo = {
   gallery: [childrenImage, yanaImageSecondary, evaImagePrimary, dimaImageSecondary],
 } as const;
 
-// Меняй карточки мерча здесь.
-// Если появятся реальные фото одежды, замени текущие lifestyle-изображения на фотографии товаров.
+export const merchContact = {
+  telegramHandle: "@miss_luzina",
+  telegramUrl: "https://t.me/miss_luzina",
+  note: "За актуальными ценами и наличием мерча уточняйте в Telegram @miss_luzina.",
+} as const;
+
+// Данные актуального мерча студии.
 export const merchItems = [
   {
-    slug: "tee",
-    name: "Футболки",
-    description: "Базовые oversize-футболки студии для тренировок и повседневного образа.",
-    sizes: "XS–XL",
-    status: "Скоро",
-    image: childrenImage,
+    slug: "dance-pants",
+    name: "Штаны для танцев",
+    description:
+      "Свободные черные штаны с фирменной вышивкой и выразительными лампасами в двух расцветках. Это первый мерч студии. Идеален как и для тренировок и съемок, так и для повседневного образа.",
+    sizes: "Наличие размеров уточняйте в телеграм",
+    status: "Сейчас в мерче",
+    image: merchPantsImageFourth,
+  },
+] as const;
+
+export const merchGallery = [
+  {
+    image: merchPantsImageThird,
+    title: "Посадка, которая работает в движении",
+    description:
+      "Свободный силуэт красиво раскрывается в танце, не сковывает корпус и держит собранный сценический образ.",
   },
   {
-    slug: "hoodie",
-    name: "Худи",
-    description: "Свободные худи с мягкой посадкой и акцентной айдентикой студии.",
-    sizes: "S–XL",
-    status: "Скоро",
-    image: yanaImageSecondary,
+    image: merchPantsImageSecondary,
+    title: "Комфорт для класса и съемок",
+    description:
+      "Мягкая посадка и уверенный объем делают эти штаны удобным вариантом и для тренировки, и для контента.",
   },
   {
-    slug: "pants",
-    name: "Штаны",
-    description: "Комфортные штаны в танцевальной эстетике для класса, лагеря и города.",
-    sizes: "S–L",
-    status: "Скоро",
-    image: dimaImageSecondary,
+    image: merchPantsImagePrimary,
+    title: "Тот самый стиль студии",
+    description:
+      "Фирменный характер Dance Soul считывается сразу: вещь выглядит сильно в кадре и уверенно в повседневном образе.",
   },
   {
-    slug: "accessories",
-    name: "Аксессуары",
-    description: "Шопперы, бутылки и мелкие элементы, которые поддерживают стиль студии.",
-    sizes: "one size",
-    status: "Скоро",
-    image: evaImageSecondary,
+    image: merchPantsImageTeam,
+    title: "Командный образ",
+    description:
+      "Штаны легко собирают цельный студийный образ, когда важно, чтобы группа смотрелась сильно и едино в кадре.",
+  },
+  {
+    image: merchPantsImageSixth,
+    title: "Сильный силуэт со спины",
+    description:
+      "Штаны держат форму со всех ракурсов и уверенно собирают образ даже в спокойной статике.",
+  },
+] as const;
+
+export const merchColorways = [
+  {
+    image: merchPantsDetailDarkImage,
+    title: "Темный акцент",
+    description: "Глубокий бордовый вариант для более плотного и драматичного образа.",
+  },
+  {
+    image: merchPantsDetailLightImage,
+    title: "Светлый акцент",
+    description: "Светлая расцветка делает силуэт контрастнее и заметнее в кадре.",
   },
 ] as const;
 
